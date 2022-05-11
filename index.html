@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+    <title>Tip Calculatot</title>
+  </head>
+  <body>
+    <!-- heading -->
+    <div class="py-16 bg-Lightgrayishcyan ">
+      <div
+        class="text-center font-mono uppercase tracking-widest text-Darkgrayishcyan text-xl"
+      >
+        <h1 class="w-28 mx-auto">Slipt Timer</h1>
+      </div>
+ 
+    <!-- calculator -->
+<div class="flex flex-col md:flex-row justify-center md:items-center mt-10">
+
+      <div class="bg-White -mt-8 rounded-3xl py-14 md:px-10 ">
+        <div class="">
+          <form action="#" class="mx-2 rounded form">
+            <label for="bill">
+              <h3 class="text-base font-mono capitalize">Bill</h3></label
+            >
+            <div
+              class="flex items-center border rounded bg-Verylightgrayishcyan"
+            >
+              <span class="pl-6"
+                ><img src="/images/icon-dollar.svg" alt=""
+              /></span>
+              <input
+                type="number"
+                name="bill"
+                id="bill-amount"
+                placeholder="Bill Amount"
+                class="py-3 w-full px-5 placeholder:text-right focus:outline-none text-right font-mono text-2xl font-bold text-Verydarkcyan bg-Verylightgrayishcyan"
+              />
+            </div>
+          </form>
+          <div class="mt-4 mx-2">
+            <div class="mb-2"><h3>Select Tip %</h3></div>
+            <div class="grid grid-cols-2 gap-4 items-center justify-center md:grid-cols-3">
+              <button
+                id="btn-5"
+                class="py-4 bg-Verydarkcyan rounded text-White font-mono text-xl"
+              >
+                5%
+              </button>
+              <button
+                id="btn-10"
+                class="py-4 bg-Verydarkcyan rounded text-White font-mono text-xl"
+              >
+                10%
+              </button>
+              <button
+                id="btn-15"
+                class="py-4 bg-Verydarkcyan rounded text-White font-mono text-xl"
+              >
+                15%
+              </button>
+              <button
+                id="btn-20"
+                class="py-4 bg-Verydarkcyan rounded text-White font-mono text-xl"
+              >
+                20%
+              </button>
+              <button
+                id="btn-50"
+                class="py-4 bg-Verydarkcyan rounded text-White font-mono text-xl"
+              >
+                50%
+              </button>
+              <button
+                id="btn-custom"
+                class="py-4 bg-Lightgrayishcyan rounded text-Verydarkcyan font-mono text-xl"
+              >
+                Custom
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto">
+          <form action="#" class="px-4 form">
+            <label for="people"> <h2>Number of people</h2></label>
+            <div
+              class="flex items-center border border-px bg-Verylightgrayishcyan rounded"
+            >
+              <span
+                ><img src="/images/icon-person.svg" alt="" class="mx-4"
+              /></span>
+              <input
+                type="number"
+                name="people"
+                id="people"
+                placeholder="people"
+                class="py-3 w-full px-5 placeholder:text-right focus:outline-none text-right font-mono text-2xl font-bold text-Verydarkcyan bg-Verylightgrayishcyan"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="mx-4 bg-Verydarkcyan py-16 rounded mt-10 md:mt-0 px-10 ">
+        <div class="flex items-center justify-between mx-4">
+          <div class="">
+            <h2 class="text-Lightgrayishcyan text-lg font-mono">Tip Amount</h2>
+            <p class="text-Grayishcyan">/ Person</p>
+          </div>
+          <div class="price flex space-x-1 items-center mx-2">
+            <img src="/images/icon-dollar.svg" alt="" class="h-3" />
+            <h2 class="text-4xl font-mono text-Strongcyan tip-amount">0</h2>
+          </div>
+        </div>
+        <!-- total per person -->
+        <div class="flex items-center justify-between mx-4 mt-4">
+          <div class="tip-amount">
+            <h2 class="text-Lightgrayishcyan text-lg font-mono " id="total-cost">
+              Total Amount
+            </h2>
+            <p class="text-Grayishcyan">/ Person</p>
+          </div>
+          <div class="price flex space-x-1 items-center mx-2">
+            <img src="/images/icon-dollar.svg" alt="" class="h-3" />
+            <h2 class="text-4xl font-mono text-Strongcyan" id="totalamount">0</h2>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">
+          <button id="reset"
+            class="py-4 bg-Strongcyan w-11/12 rounded text-White font-mono text-xl"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+       </div>
+       </div>
+  </body>
+</html>
